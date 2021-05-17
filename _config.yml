@@ -146,7 +146,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "navidjafarof@email.here"
+email: "navidjafarof@gmail.com"
 
 
 # Set a url pointing to your publish PGP Public Key here, and it will appear in the Contact section
@@ -219,5 +219,6 @@ sass:
   style: compressed
 
 gems:
+  - github-pages
   - jekyll-paginate
   - jemoji
