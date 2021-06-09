@@ -1,21 +1,20 @@
-
 <!-- Photography Layout Start -->
 
 <!DOCTYPE html>
 <html lang="en">
 
-  
+
 <!-- HEAD Start -->
 
 <head>
-  
+
 
 
   <!-- Force HTTPS Start -->
   <script>
-  // Don't force http when serving the website locally
-  if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+    // Don't force http when serving the website locally
+    if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
   </script>
 
   <!-- Force HTTPS End -->
@@ -36,7 +35,7 @@
 
   <!-- Custom CSS -->
   <link href="/css/grayscale.css" rel="stylesheet">
-  
+
 
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -50,13 +49,13 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-  
 
-  
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
 
-  
+
+
+
+
 
 
   <!-- iOS Web App mode -->
@@ -76,17 +75,17 @@
 
 
 
-  
-<!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#000000">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#000000">
-<!-- iOS Safari -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 
-  
+
 
 
 
@@ -95,175 +94,197 @@
 <!-- HEAD End -->
 
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="151">
 
-    
-<!-- Navigation Start -->
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-        <i class="fa fa-bars"></i>
-      </button>
-      
+  <!-- Navigation Start -->
+
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+
         <a class="navbar-brand" href="/">
-      
+
           <div>
-            
-              <img src="/img/black-favicon.ico" alt="">
-            
-              Navid Jafarof
+
+            <img src="/img/black-favicon.ico" alt="">
+
+            Navid Jafarof
           </div>
         </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+
+          <li>
+            <a class="button" href="/"> Home </a>
+          </li>
+
+        </ul>
+      </div>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-        
-        <li>
-          <a class="button" href="/"> Home </a>
-        </li>
-        
-      </ul>
-    </div>
+  </nav>
+
+  <!-- Navigation End -->
+
+  
+  
+  <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1" style="text-align: center;">
+    <h1><strong>Some of the photos that I've taken.</strong></h1>
   </div>
-</nav>
-
-<!-- Navigation End -->
-
-    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1" style="text-align: center;">
-        <h1><strong>Some of the photos that I've taken.</strong></h1>
+  
+  <section id="photos" class="container content-section text-center">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 375 }'>
+      <div class="grid-item"><img src="img/MyPics/Sky.jpg" alt="1" style="width: 750px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Milad.jpg" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Milad2.jpg" alt="1" style="width: 750px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Cat.jpg" alt="1" style="width: 750px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Ferris.jpg" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Oldman.png" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Camera.jpg" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/WP.jpg" alt="1" style="width: 375px; height: 500px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Sky2.jpg" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/whirlgig3.jpg" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Silhouette.jpg" alt="1" style="height: 261px; width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/whirligi2.png" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Sky3.jpg" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/whirligi.jpg" alt="1" style="width: 750px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Sky4.jpg" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Tehran.png" alt="1" style="width: 750px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Cat3.jpg" alt="1" style="width: 375px; border: 0; padding: 5px;"></div>
     </div>
-
-    <section id="photos" class="container content-section text-center">
-
-</section>
+  </section>
 
 
 
-    <!-- Footer Start -->
+  <!-- Footer Start -->
 
-<footer>
+  <footer>
 
     <!-- Social Buttons Start -->
 
-<ul class="list-inline social-buttons">
-    
-    <li><a href="mailto:navidjafarof@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
-    
-    <li><a href="https://github.com/navidjafarof" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
-    
-    <li><a href="https://www.linkedin.com/in/navid-jafarof-602838201/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
-    
-    <li><a href="https://instagram.com/navidjafarof" target="_blank"><i class="fa fa-instagram fa-fw"></i></a></li>
-    
-    <li><a href="https://twitter.com/navidjfr" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
-    
-    
-</ul>
+    <ul class="list-inline social-buttons">
 
-<!-- Social Buttons End -->
+      <li><a href="mailto:navidjafarof@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
+
+      <li><a href="https://github.com/navidjafarof" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+
+      <li><a href="https://www.linkedin.com/in/navid-jafarof-602838201/" target="_blank"><i
+            class="fa fa-linkedin fa-fw"></i></a></li>
+
+      <li><a href="https://instagram.com/navidjafarof" target="_blank"><i class="fa fa-instagram fa-fw"></i></a></li>
+
+      <li><a href="https://twitter.com/navidjfr" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+
+
+    </ul>
+
+    <!-- Social Buttons End -->
 
 
     <p><br><br></p>
 
-    <div class="container text-center" style="font-family:Ubuntu; text-align: center; font-weight: 300; font-size: 20%;">
-        <p>Copyright &copy; Navid Jafarof 2021</p>
+    <div class="container text-center"
+      style="font-family:Ubuntu; text-align: center; font-weight: 300; font-size: 20%;">
+      <p>Copyright &copy; Navid Jafarof 2021</p>
     </div>
-</footer>
+  </footer>
 
-<p></p>
+  <p></p>
 
-<!-- Footer End -->
+  <!-- Footer End -->
 
 
-    
-<!-- Javascript Start -->
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Javascript Start -->
 
-<!-- Bootstrap Core JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<!-- Custom Theme JavaScript -->
-<!--* Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <!--* Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
 * Code licensed under the Apache License v2.0.
 * For details, see http://www.apache.org/licenses/LICENSE-2.0.-->
-<script>
-function toggleNavCollapse(){50<$(".navbar").offset().top?$(".navbar-fixed-top").addClass("top-nav-collapse"):$(".navbar-fixed-top").removeClass("top-nav-collapse");}
-$(document).ready(toggleNavCollapse);
-$(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click",function(b){var a=$(this);$("html, body").stop().animate({scrollTop:$(a.attr("href")).offset().top-50},1500,"easeInOutExpo",function(){a.blur()});b.preventDefault()})});$(".navbar-collapse ul li a").click(function(){$(".navbar-toggle:visible").click()});
-</script>
+  <script>
+    function toggleNavCollapse() { 50 < $(".navbar").offset().top ? $(".navbar-fixed-top").addClass("top-nav-collapse") : $(".navbar-fixed-top").removeClass("top-nav-collapse"); }
+    $(document).ready(toggleNavCollapse);
+    $(window).scroll(toggleNavCollapse); $(function () { $("a.page-scroll").bind("click", function (b) { var a = $(this); $("html, body").stop().animate({ scrollTop: $(a.attr("href")).offset().top - 50 }, 1500, "easeInOutExpo", function () { a.blur() }); b.preventDefault() }) }); $(".navbar-collapse ul li a").click(function () { $(".navbar-toggle:visible").click() });
+  </script>
 
 
 
 
 
 
-  
+
 
   <!-- Google Tracking Id Start -->
 
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', '', 'auto');
     ga('send', 'pageview');
   </script>
 
   <!-- Google Tracking Id End -->
 
-  
+
 
 
 
 
   <!-- Disqus -->
 
-  
-
-  
 
 
 
 
 
 
+  <script>
+    function addTohistory() {
+      if (!window.location.host.startsWith("127.0.0.1")) {
+        history.pushState({}, 'Some of the photos that I\'ve taken.', 'https://navidjafarof.github.io/photos.html');
+      }
+    }
+  </script>
 
-<script>
-function addTohistory() {
-  if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, 'Some of the photos that I've taken.', 'https://navidjafarof.github.io/photos.html');
-  }
-}
-</script>
-
-<!-- Gesture Navigation / Swipe Instruction Start -->
-
-
-  
-
-  
-
-  
-
-  
-
-<!-- Gesture Navigation / Swipe Instruction End -->
+  <!-- Gesture Navigation / Swipe Instruction Start -->
 
 
 
-<!-- Javascript End -->
 
 
-  </body>
+
+
+
+
+
+  <!-- Gesture Navigation / Swipe Instruction End -->
+
+
+
+  <!-- Javascript End -->
+
+
+</body>
+
 </html>
 
 <!-- Photography Layout End -->
