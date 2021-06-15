@@ -140,24 +140,162 @@
   <section id="photos" class="container content-section text-center">
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 375 }'>
-      <div class="grid-item"><img src="img/MyPics/Sky.jpg" style="width: 750px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Milad.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Milad2.jpg" style="width: 750px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Cat.jpg" style="width: 750px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Ferris.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Oldman.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Camera.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/WP.jpg" style="width: 375px; height: 500px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Sky2.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/whirlgig3.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Silhouette.jpg" style="height: 261px; width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/whirligi2.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Sky3.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/whirligi.jpg" style="width: 750px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Sky4.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Tehran.jpg" style="width: 750px; border: 0; padding: 5px;"></div>
-      <div class="grid-item"><img src="img/MyPics/Cat3.jpg" style="width: 375px; border: 0; padding: 5px;"></div>
+      <div class="grid-item"><img src="img/MyPics/Sky.jpg" style="width: 750px; border: 0; padding: 5px;" onclick="openModal();currentSlide(1)"></div>
+      <div class="grid-item"><img src="img/MyPics/Milad.jpg" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(2)"></div>
+      <div class="grid-item"><img src="img/MyPics/Milad2.jpg" style="width: 750px; border: 0; padding: 5px;" onclick="openModal();currentSlide(3)"></div>
+      <div class="grid-item"><img src="img/MyPics/Cat.jpg" style="width: 750px; border: 0; padding: 5px;" onclick="openModal();currentSlide(4)"></div>
+      <div class="grid-item"><img src="img/MyPics/Ferris.jpg" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(5)" ></div>
+      <div class="grid-item"><img src="img/MyPics/Oldman.png" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(6)" ></div>
+      <div class="grid-item"><img src="img/MyPics/Camera.jpg" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(7)"></div>
+      <div class="grid-item"><img src="img/MyPics/WP.jpg" style="width: 375px; height: 500px; border: 0; padding: 5px;" onclick="openModal();currentSlide(8)"></div>
+      <div class="grid-item"><img src="img/MyPics/Sky2.jpg" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(9)"></div>
+      <div class="grid-item"><img src="img/MyPics/whirlgig3.jpg" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(10)"></div>
+      <div class="grid-item"><img src="img/MyPics/Silhouette.jpg" style="height: 261px; width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(11)"></div>
+      <div class="grid-item"><img src="img/MyPics/whirligi2.png" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(12)"></div>
+      <div class="grid-item"><img src="img/MyPics/Sky3.jpg" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(13)"></div>
+      <div class="grid-item"><img src="img/MyPics/whirligi.jpg" style="width: 750px; border: 0; padding: 5px;" onclick="openModal();currentSlide(14)"></div>
+      <div class="grid-item"><img src="img/MyPics/Sky4.jpg" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(15)"></div>
+      <div class="grid-item"><img src="img/MyPics/Tehran.png" style="width: 750px; border: 0; padding: 5px;" onclick="openModal();currentSlide(16)"></div>
+      <div class="grid-item"><img src="img/MyPics/Cat3.jpg" style="width: 375px; border: 0; padding: 5px;" onclick="openModal();currentSlide(17)"></div>
     </div>
+
+    <link rel="stylesheet" href="css/lightbox.css">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 17</div>
+      <img src="img/MyPics/RealSize/Sky.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 17</div>
+      <img src="img/MyPics/RealSize/Milad.jpg" style="height: 845px; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 17</div>
+      <img src="img/MyPics/RealSize/Milad2.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 17</div>
+      <img src="img/MyPics/RealSize/Cat.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 17</div>
+      <img src="img/MyPics/RealSize/Oldman.png" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 17</div>
+      <img src="img/MyPics/RealSize/Cat.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 17</div>
+      <img src="img/MyPics/RealSize/Camera.jpg" style="height: 845px; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 17</div>
+      <img src="img/MyPics/RealSize/WP.jpg" style="height: 845px; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 17</div>
+      <img src="img/MyPics/RealSize/Sky2.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 17</div>
+      <img src="img/MyPics/RealSize/whirlgig3.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 17</div>
+      <img src="img/MyPics/RealSize/Silhouette.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 17</div>
+      <img src="img/MyPics/RealSize/whirligi2.png" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 17</div>
+      <img src="img/MyPics/RealSize/Sky3.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 17</div>
+      <img src="img/MyPics/RealSize/whirligi.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 17</div>
+      <img src="img/MyPics/RealSize/Sky4.jpg" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 17</div>
+      <img src="img/MyPics/RealSize/Tehran.png" style="width:100%; border: 0;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">17 / 17</div>
+      <img src="img/MyPics/RealSize/Cat3.jpg" style="height: 845px; border: 0;">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+<script>
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
   </section>
 
 
