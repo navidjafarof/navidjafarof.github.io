@@ -199,7 +199,7 @@
 .rrssb-buttons li.small a .rrssb-icon {
     left: auto;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     top: auto;
     width: 100%
